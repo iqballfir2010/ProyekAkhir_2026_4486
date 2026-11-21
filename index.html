@@ -8,10 +8,7 @@
        Lengkapi judul tab browser pada <title> di bawah.
        Kemudian lengkapi judul utama <h1> dan paragraf deskripsi <p>
        di bagian header halaman. -->
-  <title>Pengelolaan kegiatan kelas
-
-
-  </title>
+  <title>Pengelolaan kegiatan kelas </title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +16,7 @@
   <main class="container">
     <header class="kepala-halaman">
       <h1>pengelolaan kegiatan kelas</h1>
-      <p><em>Aplikasi sederhana untuk mengelola kelas</em></p>
+      <p>Catat, cari, dan kelola kegiatan kelas dengan mudah</p>
     </header>
 
     <section class="panel" aria-label="Pengelolaan kegiatan">
@@ -30,14 +27,14 @@
            Acuan ID: inputKegiatan, btnTambah, btnCari, btnHapus.
            Gunakan type="button" pada ketiga tombol. -->
       <div class="form-baris">
-        <label for="input kegiatan">Nama kegiatan</label>
-        <input type="text" id="input kegiatan" placeholder="masukan nama kegiatan">
+        <label for="inputKegiatan">Nama Kegiatan</label>
+        <input type="text" id="inputKegiatan" placeholder="Contoh:Persiapan Lomba">
       </div>
 
       <div class="aksi">
-        <button type="button" id="">Tambah</button>
-        <button type="button" id="">Cari</button>
-        <button type="button" id="">Hapus</button>
+        <button type="button" id="btnTambah">Tambah</button>
+        <button type="button" id="btnCari">Cari</button>
+        <button type="button" id="btnHapus">Hapus</button>
       </div>
     </section>
 
@@ -48,9 +45,9 @@
            Lengkapi ID untuk daftar, jumlah, dan pesan status.
            Acuan ID: daftarKegiatan, totalKegiatan, pesanStatus. -->
       <ol id="daftarKegiatan"></ol>
-
-      <p class="ringkasan">Jumlah kegiatan: <strong id="">-</strong></p>
-      <p id="" aria-live="polite">Status kegiatan akan muncul di sini.</p>
+         
+      <p class="ringkasan">Jumlah kegiatan: <strong id="totalKegiatan">0</strong></p>
+      <p id="pesanStatus" aria-live="polite">Status kegiatan akan muncul di sini.</p>
     </section>
   </main>
 
